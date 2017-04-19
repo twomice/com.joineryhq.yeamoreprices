@@ -20,7 +20,7 @@
   <compatibility>
     <ver>4.6</ver>
   </compatibility>
-  <comments>Implements PHP and template overrides; see README.md.</comments>
+  <comments>Implements PHP and template overrides; see "Documentation" link above or README.md.</comments>
   <civix>
     <namespace>CRM/Yeamoreprices</namespace>
   </civix>
