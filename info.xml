@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<extension key="com.joineryhq.yeamoreprices" type="module">
+  <file>yeamoreprices</file>
+  <name>YEA More Fixed Price Options</name>
+  <description>Custom for YEA; increases to 15 the number of "Fixed Price Options" available in a Contribution Page.</description>
+  <license>GPL-3.0</license>
+  <maintainer>
+    <author>Allen Shaw</author>
+    <email>allen@JoineryHQ.com</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/twomice/com.joineryhq.yeamoreprices</url>
+    <url desc="Documentation">https://github.com/twomice/com.joineryhq.yeamoreprices</url>
+    <url desc="Support">https://github.com/twomice/com.joineryhq.yeamoreprices/issues</url>
+    <url desc="Licensing">http://www.gnu.org/licenses/gpl-3.0.html</url>
+  </urls>
+  <releaseDate>2017-04-18</releaseDate>
+  <version>0.1-beta</version>
+  <develStage>beta</develStage>
+  <compatibility>
+    <ver>4.6</ver>
+  </compatibility>
+  <comments>Implements PHP and template overrides; see README.md.</comments>
+  <civix>
+    <namespace>CRM/Yeamoreprices</namespace>
+  </civix>
+</extension>
