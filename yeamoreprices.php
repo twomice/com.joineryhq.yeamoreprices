@@ -8,9 +8,9 @@ require_once 'yeamoreprices.civix.php';
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_config
  */
 function yeamoreprices_civicrm_config(&$config) {
-  
+
   // Typically this would just call _yeamoreprices_civix_civicrm_config($config),
-  // which uses some fairly tame assumptions to extend the PHP include path and 
+  // which uses some fairly tame assumptions to extend the PHP include path and
   // smarty template directories list.
   // However, because this extension relies (for the moment) on PHP and Smarty
   // template overrides (see README.md for more discussion of that), and it
@@ -18,7 +18,7 @@ function yeamoreprices_civicrm_config(&$config) {
   // more complex logic to determine the PHP and template override directories.
   // So this function just replaces _yeamoreprices_civix_civicrm_config($config)
   // with some version-dependent logic.
-   
+
   static $configured = FALSE;
   if ($configured) {
     return;
@@ -27,10 +27,10 @@ function yeamoreprices_civicrm_config(&$config) {
 
   // Get the current major version (e.g., 4.6, 4.7).
   $major_version = implode('.', array_slice(explode('.', CRM_Utils_System::version()), 0, 2));
-  
+
   $extRoot = dirname(__FILE__) . DIRECTORY_SEPARATOR;
 
-  // Add the appropriate version-specific directory to the list of smarty 
+  // Add the appropriate version-specific directory to the list of smarty
   // template directories.
   $template =& CRM_Core_Smarty::singleton();
   $extTplDir = $extRoot . 'templates' . DIRECTORY_SEPARATOR . $major_version;
@@ -163,24 +163,24 @@ function yeamoreprices_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
  * Implements hook_civicrm_preProcess().
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_preProcess
- *
-function yeamoreprices_civicrm_preProcess($formName, &$form) {
+ */
+// function yeamoreprices_civicrm_preProcess($formName, &$form) {
 
-} // */
+// } // */
 
 /**
  * Implements hook_civicrm_navigationMenu().
  *
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_navigationMenu
- *
-function yeamoreprices_civicrm_navigationMenu(&$menu) {
-  _yeamoreprices_civix_insert_navigation_menu($menu, NULL, array(
-    'label' => ts('The Page', array('domain' => 'com.joineryhq.yeamoreprices')),
-    'name' => 'the_page',
-    'url' => 'civicrm/the-page',
-    'permission' => 'access CiviReport,access CiviContribute',
-    'operator' => 'OR',
-    'separator' => 0,
-  ));
-  _yeamoreprices_civix_navigationMenu($menu);
-} // */
+ */
+// function yeamoreprices_civicrm_navigationMenu(&$menu) {
+//   _yeamoreprices_civix_insert_navigation_menu($menu, NULL, array(
+//     'label' => ts('The Page', array('domain' => 'com.joineryhq.yeamoreprices')),
+//     'name' => 'the_page',
+//     'url' => 'civicrm/the-page',
+//     'permission' => 'access CiviReport,access CiviContribute',
+//     'operator' => 'OR',
+//     'separator' => 0,
+//   ));
+//   _yeamoreprices_civix_navigationMenu($menu);
+// } // */
