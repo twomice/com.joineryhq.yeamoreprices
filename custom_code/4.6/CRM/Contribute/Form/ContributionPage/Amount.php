@@ -77,7 +77,6 @@ class CRM_Contribute_Form_ContributionPage_Amount extends CRM_Contribute_Form_Co
     /*
      * END MODIFIED.com.joineryhq.yeamoreprices:
      */
-    
 
     // do u want to allow a free form text field for amount
     $this->addElement('checkbox', 'is_allow_other_amount', ts('Allow other amounts'), NULL, array('onclick' => "minMax(this);showHideAmountBlock( this, 'is_allow_other_amount' );"));
@@ -229,11 +228,11 @@ SELECT id
           $options = $pFIDs = array();
           $priceFieldParams = array('price_set_id' => $priceSetId);
           $priceFields = CRM_Core_DAO::commonRetrieveAll('CRM_Price_DAO_PriceField', 'price_set_id', $priceSetId, $pFIDs, $return = array(
-              'html_type',
-              'name',
-              'is_active',
-              'label',
-            ));
+            'html_type',
+            'name',
+            'is_active',
+            'label',
+          ));
           foreach ($priceFields as $priceField) {
             if ($priceField['id'] && $priceField['html_type'] == 'Radio' && $priceField['name'] == 'contribution_amount') {
               $defaults['price_field_id'] = $priceField['id'];
