@@ -39,6 +39,8 @@
  *
  */
 
+use CRM_Yeamoreprices_ExtensionUtil as E;
+
 /**
  * form to process actions on the group aspect of Custom Data
  */

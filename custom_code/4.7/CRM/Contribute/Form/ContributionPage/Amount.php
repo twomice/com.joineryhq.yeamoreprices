@@ -37,6 +37,8 @@
  * @copyright CiviCRM LLC (c) 2004-2017
  */
 
+use CRM_Yeamoreprices_ExtensionUtil as E;
+
 /**
  * form to process actions on the group aspect of Custom Data
  */

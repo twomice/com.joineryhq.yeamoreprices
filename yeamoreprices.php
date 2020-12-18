@@ -2,6 +2,8 @@
 
 require_once 'yeamoreprices.civix.php';
 
+use CRM_Yeamoreprices_ExtensionUtil as E;
+
 /**
  * Implements hook_civicrm_config().
  *
