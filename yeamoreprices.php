@@ -2,6 +2,8 @@
 
 require_once 'yeamoreprices.civix.php';
 
+use CRM_Yeamoreprices_ExtensionUtil as E;
+
 /**
  * Implements hook_civicrm_config().
  *
@@ -175,7 +177,7 @@ function yeamoreprices_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
  */
 // function yeamoreprices_civicrm_navigationMenu(&$menu) {
 //   _yeamoreprices_civix_insert_navigation_menu($menu, NULL, array(
-//     'label' => ts('The Page', array('domain' => 'com.joineryhq.yeamoreprices')),
+//     'label' => E::ts('The Page', array('domain' => 'com.joineryhq.yeamoreprices')),
 //     'name' => 'the_page',
 //     'url' => 'civicrm/the-page',
 //     'permission' => 'access CiviReport,access CiviContribute',
